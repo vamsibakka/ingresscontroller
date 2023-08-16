@@ -33,8 +33,17 @@ spec:
 ```
 # here In this ingress definition, any characters captured by (.*) will be assigned to the placeholder $2, which is then used as a parameter in the rewrite-target annotation.
 
+## To install the nginx controller using helm use the following commands : 
+```
+helm repo add nginx-stable https://helm.nginx.com/stable
+helm repo update
+helm upgrade --install ingress-nginx ingress-nginx \
+             --repo https://kubernetes.github.io/ingress-nginx \
+             --namespace ingress-nginx --create-namespace
+```
 For example, the ingress definition above will result in the following rewrites:
 
     rewrite.bar.com/something rewrites to rewrite.bar.com/
     rewrite.bar.com/something/ rewrites to rewrite.bar.com/
     rewrite.bar.com/something/new rewrites to rewrite.bar.com/new
+### INSTALLING HELM in k8s cluster to run the nginx ingress controller , to install helm follow the link `https://helm.sh/docs/intro/install/`.
