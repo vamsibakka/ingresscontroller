@@ -19,11 +19,11 @@ spec:
       name: basket-pod
       labels:
         app: basket
-        version: "1.0.0"
+        version: "1.0"
     spec:
       containers:
         - name: basket-cont
-          image:
+          image: vamsibakka/basket:1.0
           ports:
             - containerPort: 80
 
@@ -48,11 +48,11 @@ spec:
       name: identity-pod
       labels:
         app: identity
-        version: "1.0.0"
+        version: "1.0"
     spec:
       containers:
         - name: identity-cont
-          image:
+          image: vamsibakka/identity:1.0
           ports:
             - containerPort: 80
 ---
@@ -76,11 +76,11 @@ spec:
       name: catalog-pod
       labels:
         app: catalog
-        version: "1.0.0"
+        version: "1.0"
     spec:
       containers:
         - name: catalog-cont
-          image:
+          image: vamsibakka/catalog:1.0
           ports:
             - containerPort: 80
 ---
@@ -104,10 +104,10 @@ spec:
       name: order-pod
       labels:
         app: order
-        version: "1.0.0"
+        version: "1.0"
     spec:
       containers:
         - name: order-cont
-          image:
+          image: vamsibakka/order:1.0
           ports:
             - containerPort: 80
