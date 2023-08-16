@@ -48,7 +48,7 @@ helm upgrade --install ingress-nginx ingress-nginx \
              --namespace ingress-nginx --create-namespace
 ```
 * you will get the following output :
-  ```
+```
   Release "ingress-nginx" does not exist. Installing it now.
 NAME: ingress-nginx
 LAST DEPLOYED: Wed Aug 16 10:11:31 2023
@@ -96,4 +96,4 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
     tls.crt: <base64 encoded cert>
     tls.key: <base64 encoded key>
   type: kubernetes.io/tls
-  ```
+```
