@@ -22,7 +22,7 @@ spec:
         version: "1.0"
     spec:
       containers:
-        - name: basket-cont
+        - name: basket
           image: vamsibakka/basket:1.0
           ports:
             - containerPort: 80
@@ -51,7 +51,7 @@ spec:
         version: "1.0"
     spec:
       containers:
-        - name: identity-cont
+        - name: identity
           image: vamsibakka/identity:1.0
           ports:
             - containerPort: 80
@@ -79,7 +79,7 @@ spec:
         version: "1.0"
     spec:
       containers:
-        - name: catalog-cont
+        - name: catalog
           image: vamsibakka/catalog:1.0
           ports:
             - containerPort: 80
@@ -107,7 +107,7 @@ spec:
         version: "1.0"
     spec:
       containers:
-        - name: order-cont
+        - name: order
           image: vamsibakka/order:1.0
           ports:
             - containerPort: 80
